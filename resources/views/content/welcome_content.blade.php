@@ -1,4 +1,4 @@
-@extends('Layouts.welcome')
+@extends('welcome')
 @section('title',"Welcome")
 @section('content')
 <div class="flex-center position-ref full-height">
