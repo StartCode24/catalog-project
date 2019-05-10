@@ -1,135 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>@yield('title')</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon
-		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{asset('img/favicon.ico')}}">
-    <!-- Google Fonts
-		============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/bootstrap.min.css')}}">
-    <!-- Bootstrap CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/font-awesome.min.css')}}">
-    <!-- owl.carousel CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/owl.carousel.css')}}">
-    <link rel="stylesheet" href="{{asset('css/css/owl.theme.css')}}">
-    <link rel="stylesheet" href="{{asset('css/css/owl.transitions.css')}}">
-    <!-- animate CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/animate.css')}}">
-    <!-- normalize CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/normalize.css')}}">
-    <!-- meanmenu icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/meanmenu.min.css')}}">
-    <!-- main CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/main.css')}}">
-    <!-- educate icon CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/educate-custon-icon.css')}}">
-    <!-- morrisjs CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/morrisjs/morris.css')}}">
-    <!-- mCustomScrollbar CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/scrollbar/jquery.mCustomScrollbar.min.css')}}">
-    <!-- metisMenu CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/metisMenu/metisMenu.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/css/metisMenu/metisMenu-vertical.css')}}">
-    <!-- calendar CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/calendar/fullcalendar.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/css/calendar/fullcalendar.print.min.css')}}">
-    <!-- style CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/style.css')}}">
-    <!-- responsive CSS
-		============================================ -->
-    <link rel="stylesheet" href="{{asset('css/css/responsive.css')}}">
-    <!-- modernizr JS
-		============================================ -->
-    <script src="{{asset('js/js/vendor/modernizr-2.8.3.min.js')}}"></script>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>@yield('title')</title>
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
 </head>
 
 <body>
-   
-    {{-- Content --}}
-    @yield('content')
-    {{-- ============================================  --}}
-    <!-- jquery
-		============================================ -->
-    <script src="{{asset('js/js/vendor/jquery-1.12.4.min.js')}}"></script>
-    <!-- bootstrap JS
-		============================================ -->
-    <script src="{{asset('js/js/bootstrap.min.js')}}"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="{{asset('js/js/wow.min.js')}}"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="{{asset('js/js/jquery-price-slider.js')}}"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="{{asset('js/js/jquery.meanmenu.js')}}"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="{{asset('js/js/owl.carousel.min.js')}}"></script>
-    <!-- sticky JS
-		============================================ -->
-    <script src="{{asset('js/js/jquery.sticky.js')}}"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="{{asset('js/js/jquery.scrollUp.min.js')}}"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="{{asset('js/js/counterup/jquery.counterup.min.js')}}"></script>
-    <script src="{{asset('js/js/counterup/waypoints.min.js')}}"></script>
-    <script src="{{asset('js/js/counterup/counterup-active.js')}}"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="{{asset('js/js/scrollbar/jquery.mCustomScrollbar.concat.min.js')}}"></script>
-    <script src="{{asset('js/js/scrollbar/mCustomScrollbar-active.js')}}"></script>
-    <!-- metisMenu JS
-		============================================ -->
-    <script src="{{asset('js/js/metisMenu/metisMenu.min.js')}}"></script>
-    <script src="{{asset('js/js/metisMenu/metisMenu-active.js')}}"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="{{asset('js/js/morrisjs/raphael-min.js')}}"></script>
-    <script src="{{asset('js/js/morrisjs/morris.js')}}"></script>
-    <script src="{{asset('js/js/morrisjs/morris-active.js')}}"></script>
-    <!-- morrisjs JS
-		============================================ -->
-    <script src="{{asset('js/js/sparkline/jquery.sparkline.min.js')}}"></script>
-    <script src="{{asset('js/js/sparkline/jquery.charts-sparkline.js')}}"></script>
-    <script src="{{asset('js/js/sparkline/sparkline-active.js')}}"></script>
-    <!-- calendar JS
-		============================================ -->
-    <script src="{{asset('js/js/calendar/moment.min.js')}}"></script>
-    <script src="{{asset('js/js/calendar/fullcalendar.min.js')}}"></script>
-    <script src="{{asset('js/js/calendar/fullcalendar-active.js')}}"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="{{asset('js/js/plugins.js')}}"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="{{asset('js/js/main.js')}}"></script>
-    <!-- tawk chat JS
-		============================================ -->
-    <script src="{{asset('js/js/tawk-chat.js')}}"></script>
-</body>
+  {{-- content --}}
+      @yield('content')
+  {{-- =================== --}}
 
+  <!-- General JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="{{ asset('assets/js/stisla.js') }}"></script>
+  <!-- Template JS File -->
+  <script src="{{ asset('assets/js/scripts.js') }}"></script>
+  <script src="{{ asset('assets/js/custom.js') }}"></script>
+  <!-- Page Specific JS File -->
+  <script src="{{ asset('assets/js/page/index.js') }}"></script>
+</body>
 </html>
